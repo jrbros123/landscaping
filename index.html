@@ -4,27 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GreenScape Landscaping</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="GreenScape Logo" />
+  <header class="hero">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <div class="logo">GreenScape</div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+    <div class="hero-content">
+      <h1>Transform Your Outdoor Space</h1>
+      <p>Professional landscaping services tailored for your needs.</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Your Dream Lawn Starts Here</h1>
-    <p>Professional landscaping services at affordable prices.</p>
-    <a href="contact.html" class="btn">Get a Free Quote</a>
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Lawn Maintenance</h3>
+        <p>Keep your yard looking pristine all year round.</p>
+      </div>
+      <div class="card">
+        <h3>Garden Design</h3>
+        <p>Custom landscape designs to match your aesthetic.</p>
+      </div>
+      <div class="card">
+        <h3>Hardscaping</h3>
+        <p>Patios, walkways, and retaining walls built to last.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section light">
+    <h2>About Us</h2>
+    <p>With over 10 years of experience, GreenScape Landscaping delivers reliable, affordable, and high-quality outdoor solutions.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="How can we help?" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 GreenScape Landscaping</p>
+    <p>© 2025 GreenScape Landscaping. All rights reserved.</p>
   </footer>
 </body>
 </html>
