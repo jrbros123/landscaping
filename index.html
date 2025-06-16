@@ -2,63 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenScape Landscaping</title>
-  <link rel="stylesheet" href="styles/main.css" />
-  <link rel="icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evergreen Landscaping</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <div class="logo">GreenScape</div>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>Transform Your Outdoor Space</h1>
-      <p>Professional landscaping services tailored for your needs.</p>
-      <a href="#contact" class="btn">Get a Free Quote</a>
+  <header>
+    <div class="container">
+      <h1>Evergreen Landscaping</h1>
+      <p class="tagline">Making your outdoors beautiful</p>
     </div>
   </header>
 
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Lawn Maintenance</h3>
-        <p>Keep your yard looking pristine all year round.</p>
-      </div>
-      <div class="card">
-        <h3>Garden Design</h3>
-        <p>Custom landscape designs to match your aesthetic.</p>
-      </div>
-      <div class="card">
-        <h3>Hardscaping</h3>
-        <p>Patios, walkways, and retaining walls built to last.</p>
-      </div>
+  <section class="hero">
+    <div class="overlay">
+      <h2>Your Dream Yard Starts Here</h2>
+      <a href="#contact" class="btn">Get a Quote</a>
     </div>
   </section>
 
-  <section id="about" class="section light">
-    <h2>About Us</h2>
-    <p>With over 10 years of experience, GreenScape Landscaping delivers reliable, affordable, and high-quality outdoor solutions.</p>
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service">🌿 Lawn Care</div>
+      <div class="service">🌼 Garden Design</div>
+      <div class="service">🌳 Tree Trimming</div>
+      <div class="service">💧 Irrigation Systems</div>
+    </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="How can we help?" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 GreenScape Landscaping. All rights reserved.</p>
+    <p>&copy; 2025 Evergreen Landscaping</p>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
